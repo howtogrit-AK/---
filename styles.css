@@ -6,11 +6,11 @@
 }
 
 :root {
-    --color-primary: #2563EB; /* 밝은 블루 */
-    --color-secondary: #1E40AF; /* 진한 블루 */
-    --color-accent: #3B82F6; /* 중간 블루 */
-    --color-light: #EFF6FF; /* 밝은 블루 배경 */
-    --color-dark: #1E3A8A; /* 어두운 블루 */
+    --color-primary: #4CAF50; /* 밝은 그린 */
+    --color-secondary: #2E7D32; /* 진한 그린 */
+    --color-accent: #66BB6A; /* 중간 그린 */
+    --color-light: #E8F5E9; /* 밝은 그린 배경 */
+    --color-dark: #1B5E20; /* 어두운 그린 */
     --color-white: #FFFFFF;
     --color-text: #1E293B;
     --color-text-light: #64748B;
@@ -42,6 +42,7 @@ body {
     color: var(--color-text);
     line-height: 1.7;
     overflow-x: hidden;
+    background-color: var(--color-light);
 }
 
 .container {
@@ -138,7 +139,7 @@ body {
     align-items: center;
     justify-content: center;
     background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
-    background-image: url('https://via.placeholder.com/1920x1080?text=실버케어+파트너스');
+    background-image: url('https://via.placeholder.com/1920x1080?text=사회복지+서비스');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -153,7 +154,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(37, 99, 235, 0.7);
+    background: rgba(76, 175, 80, 0.7);
     z-index: 1;
 }
 
