@@ -42,7 +42,6 @@ body {
     color: var(--color-text);
     line-height: 1.7;
     overflow-x: hidden;
-    background-color: var(--color-light);
 }
 
 .container {
@@ -650,7 +649,7 @@ section {
 .form-group textarea:focus {
     outline: none;
     border-color: var(--color-primary);
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1);
 }
 
 .form-group textarea {
