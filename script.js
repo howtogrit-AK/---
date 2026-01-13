@@ -75,10 +75,10 @@ if (contactForm) {
         };
         
         // 실제 환경에서는 서버로 데이터 전송
-        console.log('교육 신청 정보:', formData);
+        console.log('상담 신청 정보:', formData);
         
         // 사용자에게 알림 (실제 환경에서는 서버 응답에 따라 처리)
-        alert('교육 신청이 완료되었습니다.\n빠른 시일 내에 연락드리겠습니다.');
+        alert('상담 신청이 완료되었습니다.\n빠른 시일 내에 연락드리겠습니다.');
         
         // 폼 초기화
         contactForm.reset();
