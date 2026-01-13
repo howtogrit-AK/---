@@ -50,7 +50,7 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // 관찰할 요소들
-const animateElements = document.querySelectorAll('.service-card, .why-us-card, .testimonial-card, .team-card, .about-text, .about-stats');
+const animateElements = document.querySelectorAll('.service-card, .why-us-card, .testimonial-card, .team-card, .about-text, .about-stats, .program-card');
 
 animateElements.forEach(el => {
     el.style.opacity = '0';

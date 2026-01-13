@@ -6,11 +6,11 @@
 }
 
 :root {
-    --color-primary: #2563EB; /* 밝은 블루 */
-    --color-secondary: #1E40AF; /* 진한 블루 */
-    --color-accent: #3B82F6; /* 중간 블루 */
-    --color-light: #EFF6FF; /* 밝은 블루 배경 */
-    --color-dark: #1E3A8A; /* 어두운 블루 */
+    --color-primary: #8B5CF6; /* 보라색 (AI 테마) */
+    --color-secondary: #7C3AED; /* 진한 보라색 */
+    --color-accent: #A78BFA; /* 밝은 보라색 */
+    --color-light: #F5F3FF; /* 밝은 보라색 배경 */
+    --color-dark: #6D28D9; /* 어두운 보라색 */
     --color-white: #FFFFFF;
     --color-text: #1E293B;
     --color-text-light: #64748B;
@@ -153,7 +153,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(37, 99, 235, 0.7);
+    background: rgba(139, 92, 246, 0.7);
     z-index: 1;
 }
 
@@ -224,6 +224,18 @@ body {
     background: var(--color-white);
     color: var(--color-primary);
     transform: translateY(-2px);
+}
+
+.btn-large {
+    padding: var(--spacing-md) var(--spacing-xl);
+    font-size: var(--font-size-xl);
+    width: 100%;
+    text-align: center;
+}
+
+.btn-small {
+    padding: var(--spacing-xs) var(--spacing-md);
+    font-size: var(--font-size-base);
 }
 
 .scroll-indicator {
@@ -406,9 +418,117 @@ section {
     line-height: 1.7;
 }
 
+/* 프로그램 소개 */
+.programs {
+    background: var(--color-white);
+}
+
+.programs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.program-card {
+    background: var(--color-white);
+    border: 2px solid var(--color-light);
+    border-radius: 15px;
+    padding: var(--spacing-lg);
+    transition: var(--transition);
+    box-shadow: var(--shadow);
+}
+
+.program-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--color-primary);
+}
+
+.program-card-featured {
+    border-color: var(--color-primary);
+    background: linear-gradient(135deg, var(--color-light) 0%, var(--color-white) 100%);
+}
+
+.program-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-md);
+    border-bottom: 2px solid var(--color-light);
+}
+
+.program-header h3 {
+    font-size: var(--font-size-xl);
+    color: var(--color-primary);
+    font-weight: 600;
+    margin: 0;
+}
+
+.program-badge {
+    background: var(--color-primary);
+    color: var(--color-white);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.program-badge-featured {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+}
+
+.program-content {
+    margin-bottom: var(--spacing-md);
+}
+
+.program-description {
+    font-size: var(--font-size-base);
+    color: var(--color-text);
+    line-height: 1.7;
+    margin-bottom: var(--spacing-md);
+    font-weight: 500;
+}
+
+.program-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.program-list li {
+    font-size: var(--font-size-base);
+    color: var(--color-text);
+    line-height: 1.8;
+    margin-bottom: var(--spacing-sm);
+    padding-left: var(--spacing-sm);
+}
+
+.program-footer {
+    padding-top: var(--spacing-md);
+    border-top: 1px solid var(--color-light);
+}
+
+.program-price {
+    font-size: var(--font-size-xl);
+    color: var(--color-primary);
+    font-weight: 700;
+    margin-bottom: var(--spacing-xs);
+}
+
+.program-price-featured {
+    font-size: var(--font-size-xxl);
+}
+
+.program-savings {
+    font-size: 14px;
+    color: var(--color-text-light);
+    font-style: italic;
+}
+
 /* 차별화 포인트 */
 .why-us {
-    background: var(--color-white);
+    background: var(--color-light);
 }
 
 .why-us-grid {
@@ -448,9 +568,10 @@ section {
     line-height: 1.7;
 }
 
-/* 고객 후기 */
+/* 고객 후기 (제거됨 - 필요시 추가 가능) */
 .testimonials {
     background: var(--color-light);
+    display: none; /* 현재는 표시하지 않음 */
 }
 
 .testimonials-grid {
@@ -618,6 +739,27 @@ section {
     padding: var(--spacing-lg);
     border-radius: 15px;
     box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-form-header {
+    margin-bottom: var(--spacing-lg);
+}
+
+.contact-form-header h3 {
+    font-size: var(--font-size-xl);
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-sm);
+    font-weight: 600;
+}
+
+.contact-form-header p {
+    font-size: var(--font-size-base);
+    color: var(--color-text-light);
 }
 
 .form-group {
@@ -819,7 +961,8 @@ section {
     
     .services-grid,
     .why-us-grid,
-    .testimonials-grid {
+    .testimonials-grid,
+    .programs-grid {
         grid-template-columns: 1fr;
     }
     
